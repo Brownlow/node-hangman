@@ -1,23 +1,45 @@
+
+// Require Stuff ====================================
 var inquirer = require('inquirer');
 var Word = require('./word.js');
+var Word = require('./word.js');
 
-var words = ['alpha', 'bravo', 'charlie', 'delta', 'echo', 'foxtrot', 'golf', 'hilo', 'indigo', 'juliet', ]
-
+// Set Variables ====================================
 var guesses = 10;
 
 
 
 
-inquirer.prompt([
-	{
-		name: 'name',
-		message: 'Guess The Letter'
+
+function playGame(){
+
+
+	if(guesses > 0){
+
+
+
+		inquirer.prompt([
+			{
+				name: 'letter',
+				message: 'Guess The Letter'
+			}
+		
+			]).then(answers => {
+
+				console.log(answers);
+		
+		});
+	} else{
+
+		gameOver();
+
 	}
+}
 
-	]).then(answers => {
-    	
+playGame();
 
-});
+
+
 
 
 
