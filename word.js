@@ -8,17 +8,20 @@ var wordList = require('./word_list.js');
 var wordArray = [];
 var chosenWord = wordList[Math.floor(Math.random() * wordList.length)];
 
+for (var i=0; i< chosenWord.length; i++){
+	wordArray.push('_');
+}
+
+console.log(chosenWord);
+console.log(wordArray);
+
 
 var Word = function(letter){
 
 	this.displayWord = function(){
 		
 
-		for (var i=0; i< chosenWord.length; i++){
-			wordArray.push('_');
-		}
-		console.log(chosenWord)
-		console.log(wordArray)
+		
 	}
 	
 	this.guessLetter = function(){
