@@ -1,25 +1,31 @@
 
 // Require Stuff ===================================
 var Letter = require('./letter.js');
+var wordList = require('./word_list.js');
 
 
-var Word = function(){
-	this.newWord = [];
-	this.getWord = function(){
+// Get Word and build array
+var wordArray = [];
+var chosenWord = wordList[Math.floor(Math.random() * wordList.length)];
 
-		var emptyArray = [];
 
-		var chosenWord = wordList[Math.floor(Math.random() * wordList.length)];
+var Word = function(letter){
+
+	this.displayWord = function(){
 		
-		for (var i=0; i< chosenWord.length; i++){
 
-			var wordLetter = new Letter(letter, guess);
-			emptyArray.push('_');
-			return emptyArray;
+		for (var i=0; i< chosenWord.length; i++){
+			wordArray.push('_');
 		}
+		console.log(chosenWord)
+		console.log(wordArray)
 	}
-	this.guessLetter = function(letter){
-		letter.correctGuess();
+	
+	this.guessLetter = function(){
+
+		for (i=0; i<wordArray.length; i++){
+			var chars = new Letter(letter)
+		}
 	}
 }
 

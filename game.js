@@ -2,7 +2,6 @@
 // Require Stuff ====================================
 var inquirer = require('inquirer');
 var Word = require('./word.js');
-var Word = require('./word.js');
 
 // Set Variables ====================================
 var guesses = 10;
@@ -16,7 +15,7 @@ function playGame(){
 
 	if(guesses > 0){
 
-
+		var newWord = new Word()
 
 		inquirer.prompt([
 			{
@@ -27,7 +26,6 @@ function playGame(){
 			]).then(answers => {
 
 				console.log(answers);
-		
 		});
 	} else{
 

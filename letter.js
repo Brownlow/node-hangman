@@ -1,26 +1,20 @@
-
-var wordList = require('./word_list.js');
-var inquirer = require('inquirer');
-
-
-var Letter = function(letter){
+var Letter = function(){
 	this.letter = letter;
-	this.guessed = false;
+	this.letterGuessed = false;
 	this.displayLetter = function(){
 
-		if(this.letter === guessed){
+		if(this.letterGuessed === true){
 			return this.letter;
+			this.guessed = true;
 		} else{
 			return '_';
-			console.log(this.letter)
 		}
 	}
-	this.correctGuess = function(){
+	this.correctGuess = function(char){
 		this.guessed = true;
 	}
 }
 
-var chosenLetter = new Letter()
 
 module.exports = Letter;
 
