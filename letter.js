@@ -1,4 +1,4 @@
-var Letter = function(){
+var Letter = function(letter){
 	this.letter = letter;
 	this.letterGuessed = false;
 	this.displayLetter = function(){
