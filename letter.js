@@ -5,13 +5,13 @@ var Letter = function(){
 
 		if(this.letterGuessed === true){
 			return this.letter;
-			this.guessed = true;
+			this.letterGuessed = true;
 		} else{
 			return '_';
 		}
 	}
-	this.correctGuess = function(char){
-		this.guessed = true;
+	this.correctGuess = function(){
+		this.letterGuessed = true;
 	}
 }
 

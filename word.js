@@ -26,11 +26,14 @@ var Word = function(letter){
 	
 	this.guessLetter = function(){
 
-		for (i=0; i<wordArray.length; i++){
-			var chars = new Letter(letter)
-		}
+		var letterGuess = new Letter(letter);
+		letterGuess.displayLetter();
+
+
 	}
 }
+
+
 
 module.exports = Word;
 
