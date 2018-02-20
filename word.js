@@ -4,25 +4,25 @@ var Letter = require('./letter.js');
 
 
 
-
-var Word = function(){
+var Word = function(letter){
 
 	this.displayWord = function(newWord){
+
+ 	for (i=0; i<this.length; i++){
+ 		newWord[i] = '_';
+ 		console.log(this.displayWord);
+ 	}
+
 		
 
-	var letterGuess = new Letter(letter);
-	letterGuess.displayLetter();
-	return word;
-		
-	}
+	var letterGuess = new Letter();
+
 	
-	this.guessLetter = function(){
-
+	letterGuess.displayLetter();
 
 	}
+
 }
-
-
 
 module.exports = Word;
 
