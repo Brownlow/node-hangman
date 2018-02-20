@@ -2,26 +2,16 @@
 // Require Stuff ===================================
 var Letter = require('./letter.js');
 
-
-
 var Word = function(letter){
+	this.wordHolder = [];
 
-	this.displayWord = function(newWord){
+	this.displayWord = function(){
 
- 	for (i=0; i<this.length; i++){
- 		newWord[i] = '_';
- 		console.log(this.displayWord);
- 	}
+ 		for (i=0; i<this.displayWord.length; i++){
 
-		
-
-	var letterGuess = new Letter();
-
-	
-	letterGuess.displayLetter();
-
+ 		var newWord.displayLetter = new Letter(letter)
+ 		}
 	}
-
 }
 
 module.exports = Word;
